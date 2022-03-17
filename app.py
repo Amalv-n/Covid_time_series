@@ -57,4 +57,4 @@ def predict():
     return render_template('result.html', prediction_text = f'{result}')
 
 if __name__ == '__main__':
-    app.run(port=8000)
+    app.run()
