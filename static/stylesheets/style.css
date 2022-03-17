@@ -1,0 +1,27 @@
+body {
+    font-family: system-ui;
+    background: black;
+    color: white;
+    align-items: center;
+  }
+  button:hover {
+    background-color: rgb(20, 68, 224);
+  }
+
+  .submit {
+    font-size:  25px;
+  }
+  .main-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('/static/images/img_1.jpg');
+    }
+  form {
+    padding: 25px;
+    margin: 25px;
+    box-shadow: 0 2px 5px #181717; 
+    background: rgb(65, 116, 189)
+    }

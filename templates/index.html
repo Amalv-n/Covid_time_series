@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <title>COVID-19 TEST FORM</title>
+    <link rel="stylesheet" href="/static/stylesheets/style.css">
+  </head>
+  <body>
+    <div class="main-block">
+      <h1>Covid-19 Self Test App</h1>
+      <form action="{{url_for('predict')}}" id="input form" method="post">
+        <div class="description"><p>Kindly fill all required entries with correct information.</div>
+        <p>Gender</p>
+        <label>
+          <input type="radio" value="male" name="gender">Male
+        </label>
+        <label>
+          <input type="radio" value="female" name="gender">Female
+        </label>
+        <label>
+          <input type="radio" value="Other" name="gender" required>Other
+        </label><br>
+        <p>Are you a senior citizen(age 60 and above)?</p> 
+        <label>
+          <input type="radio" value=1 name="senior">Yes
+        </label>
+        <label>
+          <input type="radio" value=0 name="senior" required>No
+        </label>
+        <p>Check any of the boxes if you feel any of these in the past two weeks</p>
+        <label>
+          <input type="checkbox" value=1 name="cough">Cough
+          <input type='hidden' value='' name='cough'>
+        </label>
+        <label>
+          <input type="checkbox" value=1 name="fever">Fever
+          <input type='hidden' value='' name='fever'>
+        </label>
+        <label>
+          <input type="checkbox" value=1 name="sore">Sore throat
+          <input type='hidden' value='' name='sore'>
+        </label>
+        <label>
+          <input type="checkbox" value=1 name="breath">Shortness of breath
+          <input type='hidden' value='' name='breath'>
+        </label>
+        <label>
+          <input type="checkbox" value=1 name="head">Headache
+          <input type='hidden' value='' name='head'>
+        </label>
+        <p>Test Indication:</p>
+        <label>
+          <input type="radio" value=1 name="Indication">Came from abroad
+        </label>
+        <label>
+          <input type="radio" value=2 name="Indication">Contact with covid positive
+        </label>
+        <label>
+          <input type="radio" value=0 name="Indication" required>Other
+        </label>
+        <div class="submit"><br>
+          <button type="Submit">Submit</submit>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

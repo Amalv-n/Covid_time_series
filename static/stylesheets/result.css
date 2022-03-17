@@ -1,0 +1,9 @@
+body{
+    color: white;
+    background-image: url(/static/images/img_4.jpg);
+}
+p{
+    text-align: center;
+    padding-top: 175px;
+    font-size: 45px;
+}
